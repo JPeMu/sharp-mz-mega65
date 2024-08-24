@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../EXPERIMENTS/FPGA/MEGA65/MultiComp"
+		}
+	],
+	"settings": {}
+}

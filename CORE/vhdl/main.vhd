@@ -73,6 +73,31 @@ signal keyboard_n          : std_logic_vector(79 downto 0);
 
 begin
 
+   i_gsearle : entity work.Microcomputer
+      port map (
+         n_reset         => not (reset_soft_i or reset_hard_i),
+         clk             => clk_main_i,
+
+         rxd1            => '0',
+         txd1            => open,
+         rts1            => open,
+         videoR0         => open,
+         videoG0         => open,
+         videoB0         => open,
+         videoR1         => open,
+         videoG1         => open,
+         videoB1         => open,
+         hSync           => open,
+         vSync           => open,
+         ps2Clk          => open,
+         ps2Data         => open,
+         sdCS            => open,
+         sdMOSI          => open,
+         sdMISO          => '0',
+         sdSCLK          => open,
+         driveLED        => open
+      );  -- i_gsearle
+
    -- @TODO: Add the actual MiSTer core here
    -- The demo core's purpose is to show a test image and to make sure, that the MiSTer2MEGA65 framework
    -- can be synthesized and run stand-alone without an actual MiSTer core being there, yet

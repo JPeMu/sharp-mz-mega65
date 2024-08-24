@@ -56,7 +56,7 @@ begin
          CLKFBOUT_MULT_F      => 6.750,      -- 675 MHz
          CLKFBOUT_PHASE       => 0.000,
          CLKFBOUT_USE_FINE_PS => FALSE,
-         CLKOUT0_DIVIDE_F     => 12.500,     -- 54 MHz
+         CLKOUT0_DIVIDE_F     => 13.500,     -- 54 MHz (13.5 = 50MHz)
          CLKOUT0_PHASE        => 0.000,
          CLKOUT0_DUTY_CYCLE   => 0.500,
          CLKOUT0_USE_FINE_PS  => FALSE
