@@ -213,6 +213,22 @@ begin
         n_rts => rts1
     );
 
+    -- sd1 : entity work.sd_controller
+    -- port map(
+    --     sdCS => sdCS,
+    --     sdMOSI => sdMOSI,
+    --     sdMISO => sdMISO,
+    --     sdSCLK => sdSCLK,
+    --     n_wr => n_sdCardCS or n_ioWR,
+    --     n_rd => n_sdCardCS or n_ioRD,
+    --     n_reset => n_reset,
+    --     dataIn => cpuDataOut,
+    --     dataOut => sdCardDataOut,
+    --     regAddr => cpuAddress(2 downto 0),
+    --     driveLED => driveLED,
+    --     clk => sdClock -- twice the spi clk
+    -- );
+
     -- ____________________________________________________________________________________
     -- MEMORY READ/WRITE LOGIC GOES HERE
     n_ioWR  <= n_WR or n_IORQ;
